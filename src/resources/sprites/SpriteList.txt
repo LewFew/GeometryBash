@@ -1,0 +1,8 @@
+Test ### resources/sprites/Energy_orb.gif
+Shield ### resources/sprites/Shield.png
+Block ### resources/sprites/Block.png
+Circle ### resources/sprites/circle.png
+Orbiter ### resources/sprites/orbiter.png
+Triangle ### resources/sprites/Triangle.png
+TriangleProjectile ### resources/sprites/TriangleProjectile.png
+Arrow ### resources/sprites/Arrow.png
