@@ -41,8 +41,10 @@ public class Triangle extends Player {
 		Graphics2D g2d = (Graphics2D) g;
 		
 		AffineTransform oldTransform = g2d.getTransform();
+
 		AffineTransform rotation = AffineTransform.getRotateInstance(Math.toRadians(velocity.getTheta() + 90), (position.getX() + width/2) * oldTransform.getScaleX(), (position.getY() + height/2) * oldTransform.getScaleY());
 		rotation.scale(oldTransform.getScaleX(), oldTransform.getScaleY());
+
 		g2d.setTransform(rotation);
 		g2d.drawImage(playerImage, (int)position.getX(), (int)position.getY(), null);
 		

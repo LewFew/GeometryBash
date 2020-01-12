@@ -50,7 +50,7 @@ public abstract class GameObject implements Timable {
 	public abstract void update();
 	public abstract void render(Graphics g);
 	public abstract void collide(GameObject object);
-	
+
 	protected void bounce(double bounceMagnitude, GameObject bounceObject) {
 		Vector2D v = new Vector2D(velocity.getX(), velocity.getY());
 		

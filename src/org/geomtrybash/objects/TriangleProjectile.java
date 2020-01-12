@@ -72,7 +72,6 @@ public class TriangleProjectile extends Attack {
 	public void collide(GameObject object) {
 		if (object instanceof Block) {
 			hit = true;
-			//advancedBounce(object, 1);
 			bounce(0.75, object);
 			acceleration.setTheta(velocity.getTheta());
 			acceleration.setMagnitude(3);
@@ -80,7 +79,6 @@ public class TriangleProjectile extends Attack {
 		if (object instanceof Orbiter) {
 			hit = true;
 			acceleration.setMagnitude(0);
-			//advancedBounce(object, 1);
 			bounce(0.75, object);
 			velocity.add(object.getVelocity());
 		}
