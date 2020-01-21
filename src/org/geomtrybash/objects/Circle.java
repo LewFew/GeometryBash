@@ -15,6 +15,8 @@ public class Circle extends Player {
 	private Orbiter orbiters[] = new Orbiter[4];
 	protected Image arrow = Resources.sprites.get("Arrow");
 	
+	public int collideCounter = 0;
+	
 	public Circle(int x, int y, boolean p1) {
 		super(x, y, p1);
 

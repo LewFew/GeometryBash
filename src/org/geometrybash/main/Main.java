@@ -33,7 +33,7 @@ public class Main implements Runnable {
 	
 	private JFrame frame;
 	
-	public static boolean debugMode = true;
+	public static boolean debugMode = false;
 
 	public static void main(String[] args) {
 		new Main();
